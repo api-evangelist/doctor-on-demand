@@ -1,8 +1,24 @@
 aid: doctor-on-demand
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/doctor-on-demand.png
 name: Doctor on Demand
-description: Doctor on Demand is a company surfaced as a portfolio company of a16z, gv, shasta-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Doctor on Demand is a telehealth platform offering 24/7 virtual medical care through video
+  visits with board-certified clinicians. Services span urgent care, mental health therapy, psychiatry,
+  primary care, and preventive health, with prescriptions routed to local pharmacies. Now part of Included
+  Health, it serves consumers directly and through employer and health-plan benefit programs. It was
+  surfaced as a portfolio company of a16z, GV, and Shasta Ventures. As of this enrichment pass Doctor on
+  Demand publishes no public developer or partner API program; this profile carries the company identity
+  and probed domain-security posture only.
 url: https://raw.githubusercontent.com/api-evangelist/doctor-on-demand/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Telehealth
+- Telemedicine
+- Healthcare
+- Digital Health
+- Mental Health
+- Virtual Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/doctor-on-demand-domain-security.yml
 - type: Website
-  url: http://doctorondemand.com
+  url: https://doctorondemand.com
+- type: Blog
+  url: https://doctorondemand.com/blog/
+- type: Support
+  url: https://doctorondemand.com/how-to-contact-us/
+- type: PrivacyPolicy
+  url: https://doctorondemand.com/site-privacy-policy/
+- type: TermsOfService
+  url: https://includedhealth.com/legal/terms/
+- type: SignUp
+  url: https://doctorondemand.com/join/
+- type: Login
+  url: https://doctorondemand.com/login/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
